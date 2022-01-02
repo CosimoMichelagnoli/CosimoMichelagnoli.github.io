@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Site! on Cosimo</title>
+    <title>My Site! on Home</title>
     <link>http://example.org/</link>
-    <description>Recent content in My Site! on Cosimo</description>
+    <description>Recent content in My Site! on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Dec 2021 22:39:06 +0100</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
+      <title>Hi there, I am Cosimo 👋</title>
       <link>http://example.org/about/</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/about/</guid>
-      <description>Welcome to my personal Website! I&amp;rsquo;m a MSc Student in Computer Engineering. I was just getting bored while I was studying and to pass the time I created my corner of the web</description>
+      <description>I&amp;rsquo;m completing my Master of Science in Computer Engineering at Politecnico di Torino. Over this last few years, i have dedicated my time to learn everthing i could about Cybersecurity and Cloud Computing, working on many projects.</description>
+    </item>
+    
+    <item>
+      <title>Long story short...</title>
+      <link>http://example.org/story/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/story/</guid>
+      <description>💻 When I was 16 I built my PC 🎮 At the end of my first year at UniFi, I created a Videogame in C++ 🛠️ Discrete math course blew my mind ♥️ I fell in love with Artificial Intelligence after working on Emotion &amp;amp; Speech Recognition &amp;hellip; 🎓 &amp;hellip; however, my Bachelor thesis was about Analysis and development of a scalable solution for IOT Broker providing a dashboard for IOT devices ✈️ I moved to Turin and started studying at PoliTo, focusing on Cybersecurity and Cloud Computing 💾 I rebuild the OS161 kernel a standalone kernel and a simple userland, all written in C.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/education/</guid>
+      <description>I am a MSc. Student c/o Polytechnic University of Turin     🎓 Graduated with a bachelor degree in Computer Engineering from the University of Florence  </description>
     </item>
     
   </channel>

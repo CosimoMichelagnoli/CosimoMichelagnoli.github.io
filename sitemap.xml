@@ -8,6 +8,12 @@
     <loc>http://example.org/about/</loc>
     <lastmod>2021-12-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://example.org/story/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/education/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>http://example.org/authors/</loc>
   </url><url>
     <loc>http://example.org/categories/</loc>

@@ -410,6 +410,18 @@ hr{border-color:var(--border);}
 .cmdk-results li.active .cmdk-hint{color:var(--accent);}
 .cmdk-empty{padding:1.4rem 1.8rem;color:var(--text-dim);font-family:var(--mono);font-size:1.4rem;}
 
+/* ---------- cursor glow (subtle, desktop pointers only) ---------- */
+.cursor-glow{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:1;
+  opacity:0;
+  transition:opacity .4s ease;
+  background:radial-gradient(320px circle at var(--x,50%) var(--y,50%), var(--accent-soft), transparent 70%);
+}
+.cursor-glow.active{opacity:1;}
+
 /* ---------- print (CV) ---------- */
 @media print{
   .navigation,.footer,.float-container,.cmdk-overlay,.term-input-row{display:none!important;}

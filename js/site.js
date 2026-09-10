@@ -230,8 +230,17 @@
       clear: function () {
         log.innerHTML = "";
       },
+      theme: function () {
+        var toggle = document.getElementById("dark-mode-toggle");
+        if (toggle) toggle.click();
+        print("theme toggled");
+      },
+      history: function () {
+        print(history.length ? history.join(", ") : "no history yet");
+      },
       help: function () {
-        print("available: whoami, about, education, story, cv, contact, github, linkedin, clear");
+        print("available: whoami, about, education, story, cv, contact, github, linkedin, theme, history, clear");
+        print("tip: press Tab to autocomplete, ↑/↓ for history");
       }
     };
     var ALIASES = {
@@ -286,7 +295,38 @@
           histPos = history.length;
           input.value = "";
         }
+      } else if (e.key === "Tab") {
+        e.preventDefault();
+        var val = input.value.trim().toLowerCase();
+        if (!val) return;
+        var candidates = Object.keys(ROUTES).filter(function (k) {
+          return k.indexOf(val) === 0;
+        });
+        if (candidates.length === 1) input.value = candidates[0];
+        else if (candidates.length > 1) print(candidates.join("  "));
       }
+    });
+  }
+
+  /* ---------------- cursor glow (desktop, motion-safe) ---------------- */
+  function initCursorGlow() {
+    if (reducedMotion) return;
+    if (!window.matchMedia("(pointer: fine)").matches) return; // skip touch/coarse pointers
+    var glow = document.createElement("div");
+    glow.className = "cursor-glow";
+    document.body.appendChild(glow);
+    var raf = null;
+    window.addEventListener("mousemove", function (e) {
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        glow.style.setProperty("--x", e.clientX + "px");
+        glow.style.setProperty("--y", e.clientY + "px");
+        glow.classList.add("active");
+        raf = null;
+      });
+    });
+    window.addEventListener("mouseleave", function () {
+      glow.classList.remove("active");
     });
   }
 
@@ -295,5 +335,6 @@
     initReveal();
     initCommandPalette();
     initHomeTerminal();
+    initCursorGlow();
   });
 })();

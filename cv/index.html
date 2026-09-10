@@ -7,10 +7,7 @@
     <meta http-equiv="Content-Language" content="en">
     <meta name="color-scheme" content="light dark">
 
-
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
-
-
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
 
     <meta name="author" content="Cosimo Michelagnoli">
     <meta name="description" content="Cosimo Michelagnoli — Offensive Cybersecurity Analyst. Experience, education, skills and certifications.">
@@ -34,8 +31,9 @@
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     <link rel="stylesheet" href="/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
-
     <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="/css/site.css">
 
     <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
@@ -44,174 +42,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
     <meta name="generator" content="Hugo 0.89.4" />
-
-    <style>
-      :root{
-        --cv-accent:#1565c0;
-        --cv-line:#e0e0e0;
-        --cv-muted:#5f6368;
-        --cv-tag-bg:#e0e0e0;
-        --cv-tag-fg:#212121;
-        --cv-card-bg:#ffffff;
-        --cv-card-border:#e0e0e0;
-      }
-      body.colorscheme-dark{
-        --cv-accent:#42a5f5;
-        --cv-line:#424242;
-        --cv-muted:#9e9e9e;
-        --cv-tag-bg:#2c2c2c;
-        --cv-tag-fg:#dadada;
-        --cv-card-bg:#262626;
-        --cv-card-border:#3a3a3a;
-      }
-      @media (prefers-color-scheme:dark){
-        body.colorscheme-auto{
-          --cv-accent:#42a5f5;
-          --cv-line:#424242;
-          --cv-muted:#9e9e9e;
-          --cv-tag-bg:#2c2c2c;
-          --cv-tag-fg:#dadada;
-          --cv-card-bg:#262626;
-          --cv-card-border:#3a3a3a;
-        }
-      }
-
-      .cv-header{margin-top:0}
-      .cv-header .cv-role{
-        color:var(--cv-accent);
-        font-size:2rem;
-        font-weight:600;
-        margin:.4rem 0 1.6rem;
-      }
-      .cv-contact{
-        list-style:none;
-        margin:0 0 2.4rem;
-        padding:0;
-        display:flex;
-        flex-wrap:wrap;
-        gap:.6rem 2rem;
-        font-size:1.6rem;
-        color:var(--cv-muted);
-      }
-      .cv-contact li{display:flex;align-items:center;gap:.6rem}
-      .cv-contact a{color:inherit}
-      .cv-contact a:hover,.cv-contact a:focus{color:var(--cv-accent)}
-      .cv-contact i{width:1.6rem;text-align:center;color:var(--cv-accent)}
-
-      .cv-summary{
-        font-size:1.8rem;
-        line-height:1.7;
-        border-left:3px solid var(--cv-accent);
-        padding-left:1.8rem;
-        margin:0 0 4rem;
-      }
-
-      .cv-section-title{
-        display:flex;
-        align-items:center;
-        gap:1rem;
-        margin:5rem 0 2.4rem;
-      }
-      .cv-section-title i{color:var(--cv-accent);font-size:2rem}
-      .cv-section-title h2{margin:0}
-
-      .timeline{
-        position:relative;
-        margin:0 0 2rem;
-        padding-left:2.8rem;
-        border-left:2px solid var(--cv-line);
-      }
-      .timeline-item{position:relative;padding-bottom:3.6rem}
-      .timeline-item:last-child{padding-bottom:0}
-      .timeline-item::before{
-        content:"";
-        position:absolute;
-        left:-3.55rem;
-        top:.4rem;
-        width:1.2rem;
-        height:1.2rem;
-        border-radius:50%;
-        background:var(--cv-accent);
-        box-shadow:0 0 0 4px var(--cv-card-bg);
-      }
-      .timeline-period{
-        display:inline-block;
-        font-size:1.4rem;
-        font-weight:700;
-        letter-spacing:.05rem;
-        color:var(--cv-accent);
-        text-transform:uppercase;
-        margin-bottom:.4rem;
-      }
-      .timeline-item h3{margin:0 0 .2rem;font-size:2.1rem;line-height:2.6rem}
-      .timeline-org{
-        display:block;
-        font-size:1.6rem;
-        color:var(--cv-muted);
-        margin-bottom:1rem;
-      }
-      .timeline-item ul{margin:1rem 0 0;padding-left:2rem}
-      .timeline-item li{margin:.5rem 0}
-
-      .skills-grid{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(24rem,1fr));
-        gap:2rem;
-        margin-bottom:2rem;
-      }
-      .skill-group h4{
-        margin:0 0 1rem;
-        font-size:1.6rem;
-        text-transform:uppercase;
-        letter-spacing:.05rem;
-        color:var(--cv-muted);
-      }
-      .skill-tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.8rem}
-      .skill-tags li{
-        background:var(--cv-tag-bg);
-        color:var(--cv-tag-fg);
-        padding:.5rem 1.2rem;
-        border-radius:.6rem;
-        font-size:1.5rem;
-      }
-
-      .cert-list{list-style:none;margin:0 0 2rem;padding:0;display:flex;flex-direction:column;gap:1.6rem}
-      .cert-card{
-        border:1px solid var(--cv-card-border);
-        background:var(--cv-card-bg);
-        border-radius:.8rem;
-        padding:1.6rem 2rem;
-      }
-      .cert-card .cert-name{font-weight:700;font-size:1.8rem;display:block}
-      .cert-card .cert-issuer{color:var(--cv-accent);font-size:1.5rem}
-      .cert-card .cert-meta{
-        display:block;
-        margin-top:.4rem;
-        font-size:1.4rem;
-        color:var(--cv-muted);
-      }
-
-      .lang-list{list-style:none;margin:0 0 2rem;padding:0;display:flex;gap:3rem;flex-wrap:wrap}
-      .lang-list li{font-size:1.7rem}
-      .lang-list strong{display:block;font-size:1.4rem;color:var(--cv-muted);font-weight:400;text-transform:uppercase;letter-spacing:.05rem}
-
-      .cv-note{
-        font-size:1.5rem;
-        color:var(--cv-muted);
-        font-style:italic;
-        margin-top:-1rem;
-        margin-bottom:2rem;
-      }
-
-      @media only screen and (max-width:768px){
-        .cv-header .cv-role{font-size:1.8rem}
-      }
-    </style>
   </head>
-
-
-
-
 
   <body class="preload-transitions colorscheme-auto">
 
@@ -226,7 +57,7 @@
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      Home
+      cosimo
     </a>
 
       <input type="checkbox" id="menu-toggle" />
@@ -235,24 +66,21 @@
       </label>
       <ul class="navigation-list">
 
-
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
+              <a class="navigation-link" href="/about/">about</a>
             </li>
 
             <li class="navigation-item">
-              <a class="navigation-link" href="/education/">Education</a>
+              <a class="navigation-link" href="/education/">education</a>
             </li>
 
             <li class="navigation-item">
-              <a class="navigation-link" href="/story/">Story</a>
+              <a class="navigation-link" href="/story/">story</a>
             </li>
 
             <li class="navigation-item">
-              <a class="navigation-link" href="/cv/">CV</a>
+              <a class="navigation-link active" href="/cv/">cv</a>
             </li>
-
-
 
       </ul>
 
@@ -265,6 +93,7 @@
   <section class="container page">
   <article>
     <header class="cv-header">
+      <div class="hero-tag">cat cv.txt</div>
       <h1 class="title">
         <a class="title-link" href="http://example.org/cv/">
           Cosimo Michelagnoli
@@ -274,7 +103,7 @@
     </header>
 
     <ul class="cv-contact">
-      <li><i class="fa fa-map-marker" aria-hidden="true"></i> Florence, Italy</li>
+      <li><i class="fa fa-map-marker" aria-hidden="true"></i> Milan, Italy</li>
       <li><i class="fa fa-phone" aria-hidden="true"></i> +39 334 5610124</li>
       <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:michelagnolicosimo@gmail.com">michelagnolicosimo@gmail.com</a></li>
       <li><i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/cosimomichelagnoli/">linkedin.com/in/cosimomichelagnoli</a></li>
@@ -282,17 +111,15 @@
     </ul>
 
     <p class="cv-summary">
-      Offensive Cybersecurity Analyst with an MSc in Cybersecurity from Politecnico di Torino.
-      I work on infrastructure and web/API penetration testing, red &amp; purple teaming and
-      Active Directory security, with a soft spot for cloud infrastructure and Kubernetes.
-      Below is the path that got me here — for the longer, less formal version, see my
+      Offensive Cybersecurity Analyst with 3+ years of experience in penetration testing and
+      cloud security, and an MSc in Cybersecurity from Politecnico di Torino. I work on
+      infrastructure and web/API penetration testing, red &amp; purple teaming and Active
+      Directory security, with a soft spot for cloud infrastructure and Kubernetes. Below is the
+      path that got me here — for the longer, less formal version, see my
       <a href="/story/">Story</a>.
     </p>
 
-    <div class="cv-section-title">
-      <i class="fa fa-road" aria-hidden="true"></i>
-      <h2 id="my-path">My Path</h2>
-    </div>
+    <div class="section-label"><i class="fa fa-road" aria-hidden="true"></i><h2 id="my-path">my path</h2></div>
 
     <div class="timeline">
 
@@ -311,9 +138,10 @@
       <div class="timeline-item">
         <span class="timeline-period">2023 — 2025</span>
         <h3>Security Analyst</h3>
-        <span class="timeline-org">Cybersecurity consulting company · Turin</span>
+        <span class="timeline-org"><a href="https://www.hnsecurity.it/">HN Security</a> · Turin</span>
         <ul>
-          <li>Started my career in offensive security, carrying out infrastructure and web application penetration tests for enterprise clients.</li>
+          <li>Started my career in offensive security, performing penetration testing and vulnerability assessments for enterprise clients.</li>
+          <li>Contributed to security research and technical reporting.</li>
           <li>First hands-on experience with real-world VAPT engagements right after graduating — where the "Iliad chapter" above picks up.</li>
         </ul>
       </div>
@@ -346,59 +174,48 @@
 
     </div>
 
-    <p class="cv-note">
-      Note: the consulting company name for 2023–2025 is intentionally generic (matching how I describe it on the
-      <a href="/story/">Story</a> page) — send me the exact name and I'll update it.
-    </p>
-
-    <div class="cv-section-title">
-      <i class="fa fa-code" aria-hidden="true"></i>
-      <h2 id="technical-skills">Technical Skills</h2>
-    </div>
+    <div class="section-label"><i class="fa fa-code" aria-hidden="true"></i><h2 id="technical-skills">technical skills</h2></div>
 
     <div class="skills-grid">
       <div class="skill-group">
-        <h4>Offensive Security</h4>
+        <h4>offensive security</h4>
         <ul class="skill-tags">
           <li>Burp Suite</li><li>Nmap</li><li>Metasploit</li><li>BloodHound</li><li>Active Directory attack tooling</li>
         </ul>
       </div>
       <div class="skill-group">
-        <h4>Methodologies &amp; Frameworks</h4>
+        <h4>methodologies &amp; frameworks</h4>
         <ul class="skill-tags">
           <li>OWASP</li><li>PTES</li><li>MITRE ATT&amp;CK</li>
         </ul>
       </div>
       <div class="skill-group">
-        <h4>Cloud &amp; Infrastructure</h4>
+        <h4>cloud &amp; infrastructure</h4>
         <ul class="skill-tags">
           <li>Kubernetes</li><li>Docker</li>
         </ul>
       </div>
       <div class="skill-group">
-        <h4>Systems</h4>
+        <h4>systems</h4>
         <ul class="skill-tags">
           <li>Linux</li><li>Windows Server / Active Directory</li>
         </ul>
       </div>
       <div class="skill-group">
-        <h4>Programming</h4>
+        <h4>programming</h4>
         <ul class="skill-tags">
           <li>C</li><li>C++</li><li>Go</li><li>Python</li><li>Java</li>
         </ul>
       </div>
       <div class="skill-group">
-        <h4>Web Frameworks</h4>
+        <h4>web frameworks</h4>
         <ul class="skill-tags">
           <li>React</li><li>Django</li>
         </ul>
       </div>
     </div>
 
-    <div class="cv-section-title">
-      <i class="fa fa-certificate" aria-hidden="true"></i>
-      <h2 id="certifications">Certifications</h2>
-    </div>
+    <div class="section-label"><i class="fa fa-certificate" aria-hidden="true"></i><h2 id="certifications">certifications</h2></div>
 
     <ul class="cert-list">
       <li class="cert-card">
@@ -416,22 +233,27 @@
         <span class="cert-issuer">Recorded Future</span>
         <span class="cert-meta">Issued Dec 2025 · Credential ID wpsrc4o4t3rs</span>
       </li>
+      <li class="cert-card">
+        <span class="cert-name">CyberChallenge.IT</span>
+        <span class="cert-issuer">CyberChallenge.IT</span>
+        <span class="cert-meta">2022</span>
+      </li>
     </ul>
 
-    <div class="cv-section-title">
-      <i class="fa fa-language" aria-hidden="true"></i>
-      <h2 id="languages">Languages</h2>
-    </div>
+    <div class="section-label"><i class="fa fa-trophy" aria-hidden="true"></i><h2 id="awards">awards</h2></div>
+
+    <ul>
+      <li>🏆 First place, European BEST Engineering Competition (2022).</li>
+    </ul>
+
+    <div class="section-label"><i class="fa fa-language" aria-hidden="true"></i><h2 id="languages">languages</h2></div>
 
     <ul class="lang-list">
       <li><strong>Italian</strong>Native</li>
       <li><strong>English</strong>B2</li>
     </ul>
 
-    <div class="cv-section-title">
-      <i class="fa fa-flask" aria-hidden="true"></i>
-      <h2 id="projects">Projects &amp; Extracurriculars</h2>
-    </div>
+    <div class="section-label"><i class="fa fa-flask" aria-hidden="true"></i><h2 id="projects">projects &amp; extracurriculars</h2></div>
 
     <ul>
       <li><strong><a href="https://github.com/netgroup-polito/CrownLabs">CrownLabs Sandbox Support</a></strong> (Politecnico di Torino) — extended a Kubernetes-based platform with per-user sandbox namespaces and custom resource management, in Go.</li>
@@ -440,14 +262,12 @@
       <li><strong><a href="https://github.com/CosimoMichelagnoli/A-star">A* Videogame in C++</a></strong> — built at the end of my first year at UniFi.</li>
     </ul>
 
-    <div class="cv-section-title">
-      <i class="fa fa-heart" aria-hidden="true"></i>
-      <h2 id="volunteering-other">Volunteering &amp; Other</h2>
-    </div>
+    <div class="section-label"><i class="fa fa-heart" aria-hidden="true"></i><h2 id="volunteering-other">volunteering &amp; interests</h2></div>
 
     <ul>
       <li>Volunteer, Misericordia di S. Pietro Martire (2020); Taralluzzi – Amici della Luzi (2019).</li>
       <li>Rugby player — won the regional "Appennini" trophy and promotion to Serie A.</li>
+      <li>Paragliding pilot.</li>
     </ul>
 
   </article>
@@ -471,25 +291,7 @@
     </main>
 
 
-
       <script src="/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js" integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   </body>

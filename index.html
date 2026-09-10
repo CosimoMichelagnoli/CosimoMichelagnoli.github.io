@@ -33,11 +33,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="/css/site.css">
 
-    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 
     <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Home" />
     <meta name="generator" content="Hugo 0.89.4" />
@@ -81,11 +77,24 @@
               <a class="navigation-link" href="/cv/">cv</a>
             </li>
 
+            <li class="navigation-item">
+              <button type="button" id="cmdk-trigger" class="cmdk-trigger" aria-label="Open command palette (Ctrl+K)">⌘K</button>
+            </li>
+
       </ul>
 
   </section>
 </nav>
 
+<div class="cmdk-overlay" id="cmdk" hidden>
+  <div class="cmdk-box" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-input-row">
+      <span class="cmdk-prompt">$</span>
+      <input type="text" id="cmdk-input" class="cmdk-input" placeholder="Where to? (Esc to close)" autocomplete="off" spellcheck="false">
+    </div>
+    <ul class="cmdk-results" id="cmdk-results"></ul>
+  </div>
+</div>
 
       <div class="content">
 
@@ -93,7 +102,7 @@
   <div class="hero">
     <div class="hero-avatar"><img src="/images/avatar.jpg" alt="Cosimo Michelagnoli"></div>
 
-    <div class="hero-tag">whoami</div>
+    <div class="hero-tag" data-typewriter>whoami</div>
     <h1>Cosimo Michelagnoli</h1>
     <p class="lede">
       Offensive Cybersecurity Analyst with 3+ years of experience in penetration testing and
@@ -121,7 +130,7 @@
         <span class="term-dot green"></span>
         <span>cosimo@cybersec:~</span>
       </div>
-      <div class="term-body">
+      <div class="term-body" id="term-log">
         <span class="cmd">whoami</span>
         <span class="out">Offensive Cybersecurity Analyst @ Iliad Italia</span>
         <span class="gap"></span>
@@ -137,7 +146,12 @@
         <span class="out">Recorded Future Certified Analyst Lab</span>
         <span class="out">CyberChallenge.IT (2022)</span>
         <span class="gap"></span>
-        <span class="cmd">_<span class="cursor"></span></span>
+        <span class="out">Type "help" below to look around ↓</span>
+      </div>
+      <div class="term-input-row">
+        <span class="term-prompt">$</span>
+        <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input" placeholder="help">
+        <span class="cursor"></span>
       </div>
     </div>
   </div>
@@ -232,6 +246,7 @@
 
 
       <script src="/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js" integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
+      <script src="/js/site.js"></script>
 
 
   </body>
